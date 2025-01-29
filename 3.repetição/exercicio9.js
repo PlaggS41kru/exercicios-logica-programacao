@@ -3,10 +3,11 @@ const { stdin: input, stdout: output } = require('node:process');
 
 const rl = readline.createInterface({ input, output });
 
-rl.question('Digite o número: ', (i) => {
+rl.question('What? ', (k) => {
   // TODO: Log the answer in a database
+  console.log(`number: ${k}`);
 
-  for (let i = i; i<11; i++){
+  for (let i = k; i<11; i++){
     console.log(i)
 }
 
